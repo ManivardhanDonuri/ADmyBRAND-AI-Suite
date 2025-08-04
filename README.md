@@ -2,6 +2,12 @@
 
 A stunning, modern SaaS landing page for "ADmyBRAND AI Suite" built with Next.js 14, TypeScript, Tailwind CSS, and Framer Motion. This project showcases a complete AI-powered marketing platform with beautiful animations, responsive design, and modern UI/UX patterns.
 
+## 🌐 Live Demo
+
+**[View Live Demo](https://a-dmy-brand-ai-suite-4uwp-git-master-manis-projects-95cd834e.vercel.app)**
+
+Experience the full interactive landing page with all features and animations.
+
 ## 🚀 Features
 
 ### Design & UI
