@@ -4,7 +4,7 @@ A stunning, modern SaaS landing page for "ADmyBRAND AI Suite" built with Next.js
 
 ## 🌐 Live Demo
 
-**[View Live Demo](https://a-dmy-brand-ai-suite-4uwp-git-master-manis-projects-95cd834e.vercel.app)**
+**[View Live Demo](https://a-dmy-brand-ai-suite-4uwp.vercel.app/)**
 
 Experience the full interactive landing page with all features and animations.
 
