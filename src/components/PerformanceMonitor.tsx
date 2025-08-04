@@ -11,14 +11,15 @@ const PerformanceMonitor: React.FC = () => {
     const observer = new PerformanceObserver((list) => {
       for (const entry of list.getEntries()) {
         // Log to analytics service in production
-        console.log('Performance Metric:', {
+        const metric = {
           name: entry.name,
-          value: entry.value,
-          rating: entry.rating,
-          delta: entry.delta,
-          id: entry.id,
-          navigationType: entry.navigationType,
-        })
+          value: 'value' in entry ? entry.value : undefined,
+          rating: 'rating' in entry ? entry.rating : undefined,
+          delta: 'delta' in entry ? entry.delta : undefined,
+          id: 'id' in entry ? entry.id : undefined,
+          navigationType: 'navigationType' in entry ? entry.navigationType : undefined,
+        }
+        console.log('Performance Metric:', metric)
       }
     })
 
@@ -39,8 +40,8 @@ const PerformanceMonitor: React.FC = () => {
               dns: navigation.domainLookupEnd - navigation.domainLookupStart,
               tcp: navigation.connectEnd - navigation.connectStart,
               ttfb: navigation.responseStart - navigation.requestStart,
-              domContentLoaded: navigation.domContentLoadedEventEnd - navigation.navigationStart,
-              loadComplete: navigation.loadEventEnd - navigation.navigationStart,
+              domContentLoaded: navigation.domContentLoadedEventEnd - navigation.fetchStart,
+              loadComplete: navigation.loadEventEnd - navigation.fetchStart,
             }
             
             console.log('Page Load Metrics:', metrics)

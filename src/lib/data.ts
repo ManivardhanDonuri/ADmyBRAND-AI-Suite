@@ -170,26 +170,32 @@ export const testimonials = [
 // FAQ data
 export const faqData = [
   {
+    id: 1,
     question: "How does the AI technology work?",
     answer: "Our AI uses advanced machine learning algorithms to analyze your marketing data, identify patterns, and automatically optimize campaigns for better performance. It learns from your specific business context and continuously improves over time."
   },
   {
+    id: 2,
     question: "What kind of ROI can I expect?",
     answer: "Our customers typically see a 100-200% increase in ROI within the first 3-6 months. The exact results depend on your current marketing setup and industry, but most users see significant improvements in conversion rates and cost per acquisition."
   },
   {
+    id: 3,
     question: "Is there a learning curve?",
     answer: "Not at all! Our platform is designed to be intuitive and user-friendly. We provide comprehensive onboarding and support to get you started quickly. Most users are up and running within a few hours."
   },
   {
+    id: 4,
     question: "Can I integrate with my existing tools?",
     answer: "Yes! ADmyBRAND AI Suite integrates with all major marketing platforms including Google Ads, Facebook Ads, LinkedIn, Twitter, and more. We also offer API access for custom integrations."
   },
   {
+    id: 5,
     question: "What about data security?",
     answer: "Security is our top priority. We use enterprise-grade encryption, comply with GDPR and CCPA regulations, and never share your data with third parties. Your data is stored securely and you maintain full control."
   },
   {
+    id: 6,
     question: "Do you offer customer support?",
     answer: "Absolutely! We provide 24/7 email support for all plans, with priority phone support for Professional and Enterprise plans. Our dedicated team is here to help you succeed."
   }
